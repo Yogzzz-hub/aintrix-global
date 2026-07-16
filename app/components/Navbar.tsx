@@ -16,6 +16,7 @@ const navLinks = [
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     if (mobileOpen) {
@@ -25,24 +26,36 @@ export default function Navbar() {
     }
   }, [mobileOpen]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
       <motion.nav
-        initial={{ y: -20, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
+        initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-        className="fixed top-6 left-1/2 -translate-x-1/2 w-[95%] max-w-6xl z-50 bg-[#0a0a0a]/70 backdrop-blur-2xl border border-[#2A2A2A] rounded-3xl shadow-2xl h-[60px] px-8"
+        className={`fixed top-6 left-1/2 -translate-x-1/2 w-[80%] max-w-[1350px] z-50 border border-[#2A2A2A] rounded-full shadow-2xl h-[54px] transition-all duration-700 ${
+          scrolled
+            ? "bg-[#0a0a0a]/90 backdrop-blur-3xl"
+            : "bg-[#0a0a0a]/70 backdrop-blur-2xl"
+        }`}
       >
-        <div className="flex items-center justify-between h-full">
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", height: "100%", paddingLeft: "3rem", paddingRight: "3rem" }}>
           {/* Part A: Logo */}
-          <div className="flex-1 flex justify-start items-center ">
+          <div style={{ display: "flex", alignItems: "center", flexShrink: 0 }}>
             <Link href="/" className="text-white font-bold text-xl tracking-wide">
               Aintrix
             </Link>
           </div>
 
           {/* Part B: Center Links */}
-          <div className="hidden md:flex justify-center items-center gap-8">
+          <div className="hidden md:flex justify-center items-center" style={{ gap: "1.5rem" }}>
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -55,10 +68,11 @@ export default function Navbar() {
           </div>
 
           {/* Part C: Contact CTA */}
-          <div className="flex-1 flex justify-end items-center">
+          <div style={{ display: "flex", alignItems: "center", flexShrink: 0 }}>
             <Link
               href="/contact"
-              className="hidden md:inline-flex px-5 py-2.5 bg-white/5 hover:bg-white/10 text-white text-sm font-medium rounded-lg border border-[#2A2A2A] transition-all duration-300"
+              className="hidden md:inline-flex"
+              style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", padding: "0.5rem 1.5rem", borderRadius: "50px", border: "2px solid #2A2A2A", background: "#1A1A1A", color: "#FFFFFF", fontSize: "0.8rem", fontWeight: 600, textDecoration: "none", boxShadow: "4px 4px 12px #050505, -4px -4px 12px #222222", transition: "all 0.3s ease" }}
             >
               Contact
             </Link>
@@ -114,7 +128,7 @@ export default function Navbar() {
           <Link
             href="/contact"
             onClick={() => setMobileOpen(false)}
-            className="mt-4 px-6 py-3 bg-white/5 hover:bg-white/10 text-white text-sm font-medium rounded-lg border border-[#2A2A2A] transition-all duration-300"
+            style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", padding: "0.8rem 2.2rem", borderRadius: "50px", border: "2px solid #2A2A2A", background: "#1A1A1A", color: "#FFFFFF", fontSize: "0.875rem", fontWeight: 600, textDecoration: "none", boxShadow: "4px 4px 12px #050505, -4px -4px 12px #222222", transition: "all 0.3s ease", marginTop: "1rem" }}
           >
             Contact
           </Link>
