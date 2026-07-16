@@ -40,7 +40,7 @@ export default function Navbar() {
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-        className={`fixed top-6 left-1/2 -translate-x-1/2 w-[80%] max-w-[1350px] z-50 border border-[#2A2A2A] rounded-full shadow-2xl h-[54px] transition-all duration-700 ${
+        className={`fixed top-6 left-1/2 -translate-x-1/2 w-[80%] max-w-[1350px] z-50 border border-[#2A2A2A] rounded-xl shadow-2xl h-[54px] transition-all duration-700 ${
           scrolled
             ? "bg-[#0a0a0a]/90 backdrop-blur-3xl"
             : "bg-[#0a0a0a]/70 backdrop-blur-2xl"
@@ -72,7 +72,7 @@ export default function Navbar() {
             <Link
               href="/contact"
               className="hidden md:inline-flex"
-              style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", padding: "0.5rem 1.5rem", borderRadius: "50px", border: "2px solid #2A2A2A", background: "#1A1A1A", color: "#FFFFFF", fontSize: "0.8rem", fontWeight: 600, textDecoration: "none", boxShadow: "4px 4px 12px #050505, -4px -4px 12px #222222", transition: "all 0.3s ease" }}
+              style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", padding: "0.5rem 1.5rem", borderRadius: "8px", border: "1px solid #333333", background: "#141414", color: "#FFFFFF", fontSize: "0.8rem", fontWeight: 600, textDecoration: "none", boxShadow: "4px 4px 12px #050505, -4px -4px 12px #222222", transition: "all 0.3s ease" }}
             >
               Contact
             </Link>
@@ -128,7 +128,7 @@ export default function Navbar() {
           <Link
             href="/contact"
             onClick={() => setMobileOpen(false)}
-            style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", padding: "0.8rem 2.2rem", borderRadius: "50px", border: "2px solid #2A2A2A", background: "#1A1A1A", color: "#FFFFFF", fontSize: "0.875rem", fontWeight: 600, textDecoration: "none", boxShadow: "4px 4px 12px #050505, -4px -4px 12px #222222", transition: "all 0.3s ease", marginTop: "1rem" }}
+            style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", padding: "0.7rem 2rem", borderRadius: "8px", border: "1px solid #333333", background: "#141414", color: "#FFFFFF", fontSize: "0.875rem", fontWeight: 600, textDecoration: "none", boxShadow: "4px 4px 12px #050505, -4px -4px 12px #222222", transition: "all 0.3s ease", marginTop: "1rem" }}
           >
             Contact
           </Link>

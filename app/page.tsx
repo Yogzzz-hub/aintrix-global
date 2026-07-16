@@ -120,10 +120,10 @@ export default function Home() {
             Shaping the future through innovation, research, and strategic global partnerships.
           </p>
           <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "1.5rem" }}>
-            <Link href="/about" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", padding: "0.8rem 2.2rem", borderRadius: "50px", border: "2px solid #2A2A2A", background: "#1A1A1A", color: "#FFFFFF", fontSize: "0.875rem", fontWeight: 600, textDecoration: "none", boxShadow: "4px 4px 12px #050505, -4px -4px 12px #222222", transition: "all 0.3s ease" }}>
+            <Link href="/about" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", padding: "0.7rem 2rem", borderRadius: "8px", border: "1px solid #333333", background: "#141414", color: "#FFFFFF", fontSize: "0.875rem", fontWeight: 600, textDecoration: "none", boxShadow: "4px 4px 12px #050505, -4px -4px 12px #222222", transition: "all 0.3s ease" }}>
               Explore
             </Link>
-            <Link href="/contact" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", padding: "0.8rem 2.2rem", borderRadius: "50px", border: "2px solid #2A2A2A", background: "#1A1A1A", color: "#FFFFFF", fontSize: "0.875rem", fontWeight: 600, textDecoration: "none", boxShadow: "4px 4px 12px #050505, -4px -4px 12px #222222", transition: "all 0.3s ease" }}>
+            <Link href="/contact" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", padding: "0.7rem 2rem", borderRadius: "8px", border: "1px solid #333333", background: "#141414", color: "#FFFFFF", fontSize: "0.875rem", fontWeight: 600, textDecoration: "none", boxShadow: "4px 4px 12px #050505, -4px -4px 12px #222222", transition: "all 0.3s ease" }}>
               Get in Touch
             </Link>
           </div>
@@ -287,7 +287,7 @@ export default function Home() {
                 </p>
               </ScrollReveal>
               <ScrollReveal delay={0.45}>
-                <Link href="/internships" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", padding: "0.8rem 2.2rem", borderRadius: "50px", border: "2px solid #2A2A2A", background: "#1A1A1A", color: "#FFFFFF", fontSize: "0.875rem", fontWeight: 600, textDecoration: "none", boxShadow: "4px 4px 12px #050505, -4px -4px 12px #222222", transition: "all 0.3s ease" }}>
+                <Link href="/internships" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", padding: "0.7rem 2rem", borderRadius: "8px", border: "1px solid #333333", background: "#141414", color: "#FFFFFF", fontSize: "0.875rem", fontWeight: 600, textDecoration: "none", boxShadow: "4px 4px 12px #050505, -4px -4px 12px #222222", transition: "all 0.3s ease" }}>
                   View open positions
                 </Link>
               </ScrollReveal>
@@ -342,10 +342,10 @@ export default function Home() {
             </ScrollReveal>
             <ScrollReveal delay={0.45}>
               <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "1.5rem" }}>
-                <Link href="/contact" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", padding: "0.8rem 2.2rem", borderRadius: "50px", border: "2px solid #2A2A2A", background: "#1A1A1A", color: "#FFFFFF", fontSize: "0.875rem", fontWeight: 600, textDecoration: "none", boxShadow: "4px 4px 12px #050505, -4px -4px 12px #222222", transition: "all 0.3s ease" }}>
+                <Link href="/contact" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", padding: "0.7rem 2rem", borderRadius: "8px", border: "1px solid #333333", background: "#141414", color: "#FFFFFF", fontSize: "0.875rem", fontWeight: 600, textDecoration: "none", boxShadow: "4px 4px 12px #050505, -4px -4px 12px #222222", transition: "all 0.3s ease" }}>
                   Get in Touch
                 </Link>
-                <Link href="/careers" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", padding: "0.8rem 2.2rem", borderRadius: "50px", border: "2px solid #2A2A2A", background: "#1A1A1A", color: "#FFFFFF", fontSize: "0.875rem", fontWeight: 600, textDecoration: "none", boxShadow: "4px 4px 12px #050505, -4px -4px 12px #222222", transition: "all 0.3s ease" }}>
+                <Link href="/careers" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", padding: "0.7rem 2rem", borderRadius: "8px", border: "1px solid #333333", background: "#141414", color: "#FFFFFF", fontSize: "0.875rem", fontWeight: 600, textDecoration: "none", boxShadow: "4px 4px 12px #050505, -4px -4px 12px #222222", transition: "all 0.3s ease" }}>
                   View Careers
                 </Link>
               </div>
