@@ -46,7 +46,7 @@ export default function Navbar() {
             : "bg-[#0a0a0a]/70 backdrop-blur-2xl"
         }`}
       >
-        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", height: "100%", paddingLeft: "3rem", paddingRight: "3rem" }}>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", height: "100%", paddingLeft: "4rem", paddingRight: "4rem" }}>
           {/* Part A: Logo */}
           <div style={{ display: "flex", alignItems: "center", flexShrink: 0 }}>
             <Link href="/" className="text-white font-bold text-xl tracking-wide">

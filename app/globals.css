@@ -70,14 +70,14 @@ html.lenis body {
 
 /* Vertical spacing between sections */
 .section-spacer {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 @media (min-width: 1024px) {
   .section-spacer {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
 }
 
@@ -101,13 +101,14 @@ html.lenis body {
   display: grid;
   grid-template-columns: 1fr;
   gap: 3rem;
-  align-items: center;
+  align-items: start;
 }
 
 @media (min-width: 1024px) {
   .about-grid {
-    grid-template-columns: 1fr 1.1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 4rem;
+    align-items: start;
   }
 }
 
@@ -115,13 +116,13 @@ html.lenis body {
 .ecosystem-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.5rem;
+  gap: 2.5rem;
 }
 
 @media (min-width: 768px) {
   .ecosystem-grid {
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 2.5rem;
   }
 }
 

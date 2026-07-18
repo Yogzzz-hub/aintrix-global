@@ -184,7 +184,7 @@ export default function Home() {
           </div>
           <StaggerReveal className="ecosystem-grid" stagger={0.12}>
             {ecosystemCards.map((card) => (
-              <div key={card.title} className="group relative p-8 rounded-2xl border border-[#2A2A2A] bg-[#0a0a0a]/50 backdrop-blur-sm transition-all duration-500 hover:border-white/10 hover:shadow-[0_0_40px_rgba(255,255,255,0.03)] hover:-translate-y-1">
+              <div key={card.title} className="group relative p-8 rounded-lg border border-[#2A2A2A] bg-[#141414] transition-all duration-500 hover:border-white/10 hover:shadow-[0_0_40px_rgba(255,255,255,0.03)] hover:-translate-y-1">
                 <span className="text-xl text-secondary-text mb-5 block transition-colors duration-300 group-hover:text-white/60">{card.icon}</span>
                 <h3 className="text-base font-semibold text-primary-text mb-2">{card.title}</h3>
                 <p className="text-sm text-secondary-text leading-[1.7]">{card.description}</p>

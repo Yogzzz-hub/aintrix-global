@@ -26,7 +26,9 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col bg-primary-bg text-primary-text">
         <SmoothScrollProvider>
           <Navbar />
-          <main className="flex-1">{children}</main>
+          <main className="flex-1" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 2rem", width: "100%" }}>
+            {children}
+          </main>
           <Footer />
         </SmoothScrollProvider>
       </body>
