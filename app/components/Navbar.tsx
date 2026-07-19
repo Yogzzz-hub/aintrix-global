@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 const navLinks = [
@@ -35,9 +36,16 @@ export default function Navbar() {
       >
         <div className="flex items-center justify-between h-full">
           {/* Part A: Logo */}
-          <div className="flex-1 flex justify-start items-center ">
-            <Link href="/" className="text-white font-bold text-xl tracking-wide">
-              Aintrix
+          <div className="flex-1 flex justify-start items-center">
+            <Link href="/" className="flex items-center">
+              <Image
+                src="/logo.png"
+                alt="Aintrix"
+                width={150}
+                height={50}
+                className="h-18 w-auto"
+                priority
+              />
             </Link>
           </div>
 

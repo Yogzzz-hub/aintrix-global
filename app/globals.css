@@ -9,14 +9,6 @@
   --font-sans: var(--font-inter);
 }
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 html {
   background-color: #000000;
   color: #FFFFFF;
@@ -52,4 +44,8 @@ html.lenis body {
 
 .lenis.lenis-stopped {
   overflow: hidden;
+}
+
+#contact-main {
+  padding-top: 160px !important;
 }
