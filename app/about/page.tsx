@@ -438,62 +438,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ═══════════════════ ECOSYSTEM ═══════════════════ */}
-      <section className="ap-ecosystem">
-        <p className="ap-eyebrow">Organization &amp; Ecosystem</p>
-        <h2 className="ap-eco-title">One core. Six divisions.</h2>
-        <p className="ap-eco-hint">
-          Hover any node to see how it connects back to the center.
-        </p>
-        <div className="ap-orbit">
-          <svg
-            viewBox="0 0 100 100"
-            preserveAspectRatio="none"
-            className="ap-orbit-svg"
-          >
-            {ecoNodes.map((node) => {
-              const p = orbitPos(node.angle, 38);
-              return (
-                <line
-                  key={node.id}
-                  x1="50"
-                  y1="50"
-                  x2={p.x}
-                  y2={p.y}
-                  stroke="#D8DEE4"
-                  strokeWidth={activeEco === node.id ? "0.6" : "0.25"}
-                  strokeOpacity={activeEco === node.id ? "0.9" : "0.25"}
-                  style={{
-                    transition: "stroke-opacity 0.3s, stroke-width 0.3s",
-                  }}
-                />
-              );
-            })}
-          </svg>
-          <div className="ap-orbit-center ap-glass ap-glow">Aintrix</div>
-          {ecoNodes.map((node) => {
-            const p = orbitPos(node.angle, 38);
-            return (
-              <div
-                key={node.id}
-                className={`ap-orbit-node ap-glass${activeEco === node.id ? " active" : ""}`}
-                style={{ left: `${p.x}%`, top: `${p.y}%` }}
-                onMouseEnter={() => {
-                  setEcoDesc(node.desc);
-                  setActiveEco(node.id);
-                }}
-                onMouseLeave={() => {
-                  setEcoDesc("");
-                  setActiveEco(null);
-                }}
-              >
-                {node.label}
-              </div>
-            );
-          })}
-        </div>
-        <p className="ap-eco-desc">{ecoDesc}</p>
-      </section>
+ 
 
       {/* ═══════════════════ FUTURE ═══════════════════ */}
       <section className="ap-future">
