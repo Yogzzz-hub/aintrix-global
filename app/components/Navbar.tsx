@@ -50,8 +50,15 @@ export default function Navbar() {
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", height: "100%", paddingLeft: "3rem", paddingRight: "3rem" }}>
           {/* Part A: Logo */}
           <div style={{ display: "flex", alignItems: "center", flexShrink: 0 }}>
-            <Link href="/" className="text-white font-bold text-xl tracking-wide">
-              Aintrix
+            <Link href="/" className="flex items-center">
+              <Image
+                src="/logo.png"
+                alt="Aintrix Logo"
+                width={40}
+                height={40}
+                className="w-auto h-auto"
+                priority
+              />
             </Link>
           </div>
 
