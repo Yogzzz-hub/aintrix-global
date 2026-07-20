@@ -2,10 +2,11 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 const navLinks = [
-  { label: "Home", href: "/" },
+ 
   { label: "About", href: "/about" },
   { label: "Our Ecosystem", href: "/ecosystem" },
   { label: "Research & Innovation", href: "/research" },
